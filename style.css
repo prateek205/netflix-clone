@@ -100,7 +100,7 @@ img {
   gap: 10px;
 }
 #mainHead {
-  width: 35%;
+  width: 40%;
   font-size: 60px;
   color: #fff;
   text-align: center;
@@ -115,19 +115,19 @@ img {
   color: #fff;
   font-size: 16px;
   margin-top: 20px;
-  font-family: var(--medium-font);
+  font-family: var(--light-font);
 }
 
 .inputBtn {
-  width: 38%;
+  width: 40%;
   display: flex;
   gap: 10px;
-  margin-top: 2%;
+  margin-top: 0.5%;
 }
 input {
   width: 100%;
   padding: 18px 15px;
-  background-color: hsla(0, 100%, 0%, 0.5);
+  background-color: hsla(0, 0%, 8%, 0.6);
   border: none;
   outline: none;
   border: 1px solid hsl(0, 100%, 100%);
@@ -140,7 +140,7 @@ input::placeholder {
   color: hsl(0, 100%, 100%);
 }
 .btn {
-  width: 65%;
+  width: 60%;
   background-color: hsl(0, 100%, 50%);
   color: hsl(0, 100%, 100%);
   cursor: pointer;
@@ -149,12 +149,18 @@ button {
   width: 100%;
   border: none;
   outline: none;
-  text-transform: capitalize;
-  font-size: 20px;
+  font-size: 24px;
   border-radius: 5px;
   font-weight: bold;
-  font-family: var(--bold-font);
+  font-family: var(--light-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn:hover {
   background-color: hsl(0, 100%, 40%);
+}
+.btn i {
+  font-size: 20px;
+  margin-left: 10%;
 }
