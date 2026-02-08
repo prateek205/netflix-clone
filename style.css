@@ -1,0 +1,160 @@
+:root {
+  /* Netflix Fonts */
+  --bold-font: netflix-bold;
+  --light-font: netflix-light;
+  --medium-font: netflix-medium;
+  --regular-font: netflix-regular;
+}
+
+@font-face {
+  font-family: netflix-bold;
+  src: url("fonts/NetflixSans-Bold.otf");
+}
+@font-face {
+  font-family: netflix-light;
+  src: url("fonts/NetflixSans-Light.otf");
+}
+@font-face {
+  font-family: netflix-medium;
+  src: url("fonts/NetflixSans-Medium.otf");
+}
+@font-face {
+  font-family: netflix-regular;
+  src: url("fonts/NetflixSans-Regular.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("assets/bg-image.jpg") center / cover no-repeat;
+  box-shadow: inset 0px 0px 85px 55px hsl(0, 0%, 0%);
+}
+.mainContainer::before {
+  content: "";
+  position: absolute;
+  background: hsla(0, 0%, 0%, 0.7);
+  inset: 0;
+}
+.mainContainer {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 100px;
+  opacity: 0.95;
+}
+.logoImg {
+  width: 20%;
+}
+
+img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+.navContent {
+  display: flex;
+  gap: 5px;
+}
+.button {
+  font-family: var(--light-font);
+  padding: 6px 10px;
+  font-size: 15px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+}
+#langBtn {
+  border: 1px solid #fff;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  color: #fff;
+}
+#signBtn {
+  background-color: hsl(0, 100%, 50%);
+  color: #fff;
+  cursor: pointer;
+}
+#signBtn:hover {
+  background-color: hsl(0, 100%, 40%);
+}
+
+.mainHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 120px 0px;
+  opacity: 0.95;
+  gap: 10px;
+}
+#mainHead {
+  width: 35%;
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  font-family: var(--bold-font);
+}
+#mainPara {
+  color: #fff;
+  font-size: 16px;
+  font-family: var(--medium-font);
+}
+#mainParagraph {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+  font-family: var(--medium-font);
+}
+
+.inputBtn {
+  width: 38%;
+  display: flex;
+  gap: 10px;
+  margin-top: 2%;
+}
+input {
+  width: 100%;
+  padding: 18px 15px;
+  background-color: hsla(0, 100%, 0%, 0.5);
+  border: none;
+  outline: none;
+  border: 1px solid hsl(0, 100%, 100%);
+  color: hsl(0, 100%, 100%);
+  border-radius: 5px;
+  font-family: var(--light-font);
+  font-size: 16px;
+}
+input::placeholder {
+  color: hsl(0, 100%, 100%);
+}
+.btn {
+  width: 65%;
+  background-color: hsl(0, 100%, 50%);
+  color: hsl(0, 100%, 100%);
+  cursor: pointer;
+}
+button {
+  width: 100%;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: var(--bold-font);
+}
+.btn:hover {
+  background-color: hsl(0, 100%, 40%);
+}
