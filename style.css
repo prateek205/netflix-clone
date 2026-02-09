@@ -168,6 +168,15 @@ button {
 }
 
 /* media query */
+@media screen and (max-width: 1024px) {
+  #mainHead {
+    width: 50%;
+  }
+  .inputBtn {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .mainContainer {
     height: 100%;
