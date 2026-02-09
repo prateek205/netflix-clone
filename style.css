@@ -124,6 +124,7 @@ img {
   display: flex;
   gap: 10px;
   margin-top: 0.5%;
+  padding: 0px 10px;
 }
 input {
   width: 100%;
@@ -164,4 +165,36 @@ button {
 .btn i {
   font-size: 20px;
   margin-left: 10%;
+}
+
+/* media query */
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    height: 100%;
+  }
+  #mainHead {
+    width: 100%;
+  }
+
+  .inputBtn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .logoImg {
+    width: 100%;
+  }
+  #mainParagraph {
+    text-align: center;
+  }
+  .inputBtn {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+  }
 }
