@@ -205,30 +205,40 @@ button {
   font-size: 24px;
   text-transform: capitalize;
 }
-
-.sectionCard {
-  position: relative;
+.mList {
   width: 80%;
   margin: auto;
-  padding: 50px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+}
+.sectionCard {
+  width: 100%;
+  position: relative;
+  padding: 25px 30px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.sectionCard:hover {
+  transform: scale(1.1);
 }
 .sectionCard img {
-  border-radius: 10px;
   width: 100%;
-  object-fit: contain;
-  border: 1px solid white;
+  height: 280px;
+  object-fit: cover;
+  /* border: 1px solid white; */
+  border-radius: 15px;
 }
-#cardImg {
-  width: 20%;
-}
-.sectionCard::before {
-  content: "1";
+#sectionCont {
   position: absolute;
-  top: 75%;
-  left: 5%;
-  font-size: 25px;
+  top: 160px;
+  left: 10px;
+  font-size: 110px;
+  font-family: var(--medium-font);
+  color: #000;
+  text-shadow: 0px 0px 5px #fff;
 }
-
 /* media query */
 @media screen and (max-width: 1024px) {
   #mainHead {
