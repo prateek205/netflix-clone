@@ -199,7 +199,7 @@ button {
   z-index: 1;
 }
 
-.sectionHeading #sectionHead, .joinHeading #joinHead {
+.sectionHeading #sectionHead {
   font-family: var(--bold-font);
   width: 80%;
   margin: auto;
@@ -218,11 +218,11 @@ button {
   width: 100%;
   position: relative;
   padding: 25px 30px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 .sectionCard:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .sectionCard img {
   width: 100%;
@@ -242,16 +242,73 @@ button {
 }
 
 .join {
+  /* border: 1px solid white; */
   position: absolute;
   top: 150%;
-  border: 1px solid white;
   width: 100%;
   height: 50vh;
   background-color: #000;
   z-index: 1;
 }
+.joinHeading #joinHead {
+  font-family: var(--bold-font);
+  width: 80%;
+  margin: auto;
+}
 #joinHead {
+  font-size: 24px;
   color: #fff;
+}
+.joinCards {
+  width: 80%;
+  margin: auto;
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.joinCard {
+  position: relative;
+  /* border: 1px solid white; */
+  width: 28%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px 12px;
+  background-image:
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(255, 0, 120, 0.35),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #0b1c3d 0%, #0b1c3d 30%, #120a2a 65%, #1a0c1f 100%);
+  border-radius: 20px;
+}
+#joinTitle {
+  font-family: var(--medium-font);
+  color: #f2f2fa;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+#joinPara {
+  font-family: var(--regular-font);
+  color: #adabba;
+  font-size: 16px;
+}
+
+.joinImg {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  width: 45%;
+}
+.joinImg img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  padding: 10px;
 }
 
 /* media query */
