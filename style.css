@@ -370,16 +370,29 @@ button {
   font-weight: 300;
   color: #f2f2fa;
 }
-
+/* === FOOTER SECTION === */
 .footer {
   width: 100%;
   height: 10vh;
-  border: 1px solid white;
   margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#footerHeading h2 {
+.footerHeading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--regular-font);
+}
+
+#footerHead {
   color: #fff;
+}
+#footerPara {
+  color: #fff;
+  font-weight: 300;
 }
 
 /* media query */
