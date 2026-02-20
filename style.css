@@ -47,10 +47,6 @@
   background: hsla(0, 0%, 0%, 0.7);
   inset: 0;
 }
-.heroSection {
-  position: relative;
-  z-index: 1;
-}
 
 /* === NAVBAR SECTION === */
 .navbar {
